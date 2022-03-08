@@ -19,6 +19,6 @@ class Login:
         token = str(sid).split('#')[1]
         return token, sid
 
-
+# 啊啊啊规划局国际化
 if __name__ == '__main__':
     print(Login().login())
