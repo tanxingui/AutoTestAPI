@@ -1,0 +1,116 @@
+{
+  "uid" : "e78b66fe6392292e",
+  "name" : "test_borDer[inBody0-exData0]",
+  "fullName" : "test_cases.test_order.Test_Border#test_borDer",
+  "historyId" : "a16c64d437073d5de52aa91399a6c1b9",
+  "time" : {
+    "start" : 1641441932646,
+    "stop" : 1641441932876,
+    "duration" : 230
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_cases.test_order.Test_Border object at 0x000002149A843828>\ninBody = \"{'client': 2, 'company': '营', 'credit_code': '1234758691472583', 'name': '委托人人', 'model_id': 34368, 'body_color': '花落...ty_id': 123, 'region': 1, 'invoice_type': 2, 'insurance_type': 1, 'balance_type': 1, 'identity': '', 'province_id': 9}\"\nexData = {'errcode': 999, 'msg': '是否整版订单传参错误'}\n\n    @pytest.mark.parametrize('inBody,exData',get_excel_data(excelDir,'B端订单','Border',*configData))\n    def test_borDer(self,inBody,exData):\n        inBody = str(inBody)\n        res = Add_b(inBody).add_b()\n        # res = jsonpath.jsonpath(res, '$.errcode')\n        print('res >>>',res)\n        # exData = jsonpath.jsonpath(exData,'$.errcode')\n        print('exData >>>' ,exData)\n        # print(res['errcode'])\n        # print(type(res['errcode']))\n        # print(exData['errcode'])\n>       self.define_api_assert(res['errcode'],'=',exData['errcode'])\n\ntest_order.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\commcon\\baseApi.py:72: in define_api_assert\n    raise error  # 抛出异常---不影响pytest 运行结果！\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncls = <class 'test_cases.test_order.Test_Border'>, result = 102, condition = '='\nexp_result = 999\n\n    @classmethod  # 类方法\n    def define_api_assert(cls, result, condition, exp_result):\n        try:\n            if condition == '=':\n>               assert result == exp_result\nE               AssertionError\n\n..\\commcon\\baseApi.py:64: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "start_runing",
+    "time" : {
+      "start" : 1641441932646,
+      "stop" : 1641441932646,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1641441932568,
+      "stop" : 1641441932645,
+      "duration" : 77
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "start_runing::0",
+    "time" : {
+      "start" : 1641441934317,
+      "stop" : 1641441934317,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Border"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Border"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-M2VNAKFM"
+  }, {
+    "name" : "thread",
+    "value" : "10000-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "exData",
+    "value" : "{'errcode': 999, 'msg': '是否整版订单传参错误'}"
+  }, {
+    "name" : "inBody",
+    "value" : "{'client': 2, 'company': '营', 'credit_code': '1234758691472583', 'name': '委托人人', 'model_id': 34368, 'body_color': '花落谁家的颜色', 'inner_color': '和及规划局', 'deposit_price': 500000, 'number': '1', 'buyer_user_id': 46690, 'guide_price': 1000099, 'price': 8888899, 'balance_price': 8388899, 'remark': '1\\n2\\n3yg', 'city_id': 123, 'region': 1, 'invoice_type': 2, 'insurance_type': 1, 'balance_type': 1, 'identity': '', 'province_id': 9}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "Border" ]
+  },
+  "source" : "e78b66fe6392292e.json",
+  "parameterValues" : [ "{'errcode': 999, 'msg': '是否整版订单传参错误'}", "{'client': 2, 'company': '营', 'credit_code': '1234758691472583', 'name': '委托人人', 'model_id': 34368, 'body_color': '花落谁家的颜色', 'inner_color': '和及规划局', 'deposit_price': 500000, 'number': '1', 'buyer_user_id': 46690, 'guide_price': 1000099, 'price': 8888899, 'balance_price': 8388899, 'remark': '1\\n2\\n3yg', 'city_id': 123, 'region': 1, 'invoice_type': 2, 'insurance_type': 1, 'balance_type': 1, 'identity': '', 'province_id': 9}" ]
+}

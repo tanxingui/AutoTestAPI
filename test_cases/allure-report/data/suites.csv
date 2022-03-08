@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jan 06 12:05:32 CST 2022","Thu Jan 06 12:05:33 CST 2022","138","test_cases","test_order","Test_Border","","","test_borDer[inBody1-exData1]",""
+"passed","Thu Jan 06 12:05:33 CST 2022","Thu Jan 06 12:05:33 CST 2022","759","test_cases","test_order","Test_Corder","","","test_corDer[inBody0-exData0]",""
+"passed","Thu Jan 06 12:05:33 CST 2022","Thu Jan 06 12:05:33 CST 2022","142","test_cases","test_order","Test_Border","","","test_borDer[{""client"":2,""company"":""营"",""credit_code"":""1234758691472583"",""name"":""委托人人"",""model_id"":34368,""body_color"":""花落谁家的颜色"",""inner_color"":""和及规划局"",""deposit_price"":500000,""number"":""1"",""buyer_user_id"":46690,""guide_price"":1000099,""price"":8888899,""balance_price"":8388899,""remark"":""1\n2\n3yg"",""city_id"":123,""region"":1,""invoice_type"":2,""insurance_type"":1,""balance_type"":1,""identity"":"""",""province_id"":9啊啊啊啊}-exData2]",""
+"failed","Thu Jan 06 12:05:32 CST 2022","Thu Jan 06 12:05:32 CST 2022","230","test_cases","test_order","Test_Border","","","test_borDer[inBody0-exData0]",""
+"passed","Thu Jan 06 12:05:33 CST 2022","Thu Jan 06 12:05:34 CST 2022","217","test_cases","test_order","Test_Corder","","","test_corDer[inBody1-exData1]",""
+"passed","Thu Jan 06 12:05:34 CST 2022","Thu Jan 06 12:05:34 CST 2022","155","test_cases","test_order","Test_Corder","","","test_corDer[inBody2-exData2]",""

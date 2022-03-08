@@ -1,0 +1,15 @@
+2022-03-08 16:21:53,095 - ERROR - baseApi.py[59]:Traceback (most recent call last):
+  File "D:\AutoTextAPI\commcon\baseApi.py", line 52, in define_api_assert
+    assert result == exp_result
+AssertionError
+
+2022-03-08 16:21:53,297 - ERROR - baseApi.py[59]:Traceback (most recent call last):
+  File "D:\AutoTextAPI\commcon\baseApi.py", line 52, in define_api_assert
+    assert result == exp_result
+AssertionError
+
+2022-03-08 16:21:53,419 - ERROR - baseApi.py[59]:Traceback (most recent call last):
+  File "D:\AutoTextAPI\commcon\baseApi.py", line 52, in define_api_assert
+    assert result == exp_result
+AssertionError
+

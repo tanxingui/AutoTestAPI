@@ -1,0 +1,21 @@
+[
+    {   
+        "description":"自定义说明",
+        "request":
+        {
+            "uri":"/car_source/list",
+            "method":"post",
+            "headers":{
+		"content-type": "application/json"
+		},
+            "json":{
+	         "page_id":1,"page_size":10,"querys":[]
+	        }
+        },
+        "response":
+        {
+            "text":"{'id':476}",
+            "status":200
+        }
+    }
+]

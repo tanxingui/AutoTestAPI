@@ -1,0 +1,110 @@
+{
+  "uid" : "b590bef64b266dc1",
+  "name" : "test_corDer[inBody2-exData2]",
+  "fullName" : "test_cases.test_order.Test_Corder#test_corDer",
+  "historyId" : "f823cac5470e65a5b092c443ccca9a7b",
+  "time" : {
+    "start" : 1641441934160,
+    "stop" : 1641441934315,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "start_runing",
+    "time" : {
+      "start" : 1641441932646,
+      "stop" : 1641441932646,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1641441932568,
+      "stop" : 1641441932645,
+      "duration" : 77
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "start_runing::0",
+    "time" : {
+      "start" : 1641441934317,
+      "stop" : 1641441934317,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Corder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Corder"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-M2VNAKFM"
+  }, {
+    "name" : "thread",
+    "value" : "10000-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.test_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "exData",
+    "value" : "{'errcode': 400, 'msg': '当前网络服务不稳定，请稍后再试'}"
+  }, {
+    "name" : "inBody",
+    "value" : "{'page_d': 1, 'page_size': 10, 'querys': [{'col': 'order_no', 'cond': 'like', 'val': '2000002108201003542509016'}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "Corder" ]
+  },
+  "source" : "b590bef64b266dc1.json",
+  "parameterValues" : [ "{'errcode': 400, 'msg': '当前网络服务不稳定，请稍后再试'}", "{'page_d': 1, 'page_size': 10, 'querys': [{'col': 'order_no', 'cond': 'like', 'val': '2000002108201003542509016'}]}" ]
+}

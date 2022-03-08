@@ -1,0 +1,14 @@
+Login:
+  login:
+    url: '/login'
+    method: 'post'
+
+Add_b:
+  add_b:
+    url: '/user_order/set'
+    method: 'post'
+
+Add_c:
+  add_c:
+    url: '/order_manage/list'
+    method: 'post'

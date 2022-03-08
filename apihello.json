@@ -1,0 +1,14 @@
+[
+    {
+        "request":
+        {
+            "method":"get",
+            "uri":"/api/hello"
+        },
+        "response":
+        {
+            "text":"新贵你好!",
+            "status":200
+        }
+    }
+]

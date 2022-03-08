@@ -1,0 +1,61 @@
+[ {
+  "uid" : "78766868e8909473",
+  "name" : "test_borDer[inBody1-exData1]",
+  "time" : {
+    "start" : 1641441932888,
+    "stop" : 1641441933026,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2250dcdc5cd53c23",
+  "name" : "test_corDer[inBody0-exData0]",
+  "time" : {
+    "start" : 1641441933176,
+    "stop" : 1641441933935,
+    "duration" : 759
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a557ff778e1e6b9",
+  "name" : "test_borDer[{\"client\":2,\"company\":\"营\",\"credit_code\":\"1234758691472583\",\"name\":\"委托人人\",\"model_id\":34368,\"body_color\":\"花落谁家的颜色\",\"inner_color\":\"和及规划局\",\"deposit_price\":500000,\"number\":\"1\",\"buyer_user_id\":46690,\"guide_price\":1000099,\"price\":8888899,\"balance_price\":8388899,\"remark\":\"1\\n2\\n3yg\",\"city_id\":123,\"region\":1,\"invoice_type\":2,\"insurance_type\":1,\"balance_type\":1,\"identity\":\"\",\"province_id\":9啊啊啊啊}-exData2]",
+  "time" : {
+    "start" : 1641441933030,
+    "stop" : 1641441933172,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e78b66fe6392292e",
+  "name" : "test_borDer[inBody0-exData0]",
+  "time" : {
+    "start" : 1641441932646,
+    "stop" : 1641441932876,
+    "duration" : 230
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a589cf0ca31ddadf",
+  "name" : "test_corDer[inBody1-exData1]",
+  "time" : {
+    "start" : 1641441933939,
+    "stop" : 1641441934156,
+    "duration" : 217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b590bef64b266dc1",
+  "name" : "test_corDer[inBody2-exData2]",
+  "time" : {
+    "start" : 1641441934160,
+    "stop" : 1641441934315,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_borDer[inBody0-exData0]",
+        "uid" : "e78b66fe6392292e",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1641441932646,
+          "stop" : 1641441932876,
+          "duration" : 230
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'errcode': 999, 'msg': '是否整版订单传参错误'}", "{'client': 2, 'company': '营', 'credit_code': '1234758691472583', 'name': '委托人人', 'model_id': 34368, 'body_color': '花落谁家的颜色', 'inner_color': '和及规划局', 'deposit_price': 500000, 'number': '1', 'buyer_user_id': 46690, 'guide_price': 1000099, 'price': 8888899, 'balance_price': 8388899, 'remark': '1\\n2\\n3yg', 'city_id': 123, 'region': 1, 'invoice_type': 2, 'insurance_type': 1, 'balance_type': 1, 'identity': '', 'province_id': 9}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
