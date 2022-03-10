@@ -2,7 +2,7 @@ import hashlib
 import inspect
 import traceback
 import requests
-
+import re
 from configs.config import HOST
 from utils.log_util import log
 from utils.yaml_util import read_yaml
@@ -40,6 +40,20 @@ class BaseApi(Login):  # 基类
             return resp.json()
         except:
             print('异常处理', traceback.format_exc())
+
+
+    @classmethod
+    def replace(cls, string, pattern='#(.*?)#'):
+        for result in re.finditer(pattern, string):
+            print(result.group())
+            print(result.group(1))
+            #   需要替换的数据
+            old_value = result.group()
+            #   要替换的属性
+            prop_name = result.group(1)
+            new_value = str(getattr(cls, prop_name))
+            string = string.replace(old_value, new_value)
+        return string
 
 # ----------------------断言类的封装----------------------
 class BaseAssert:
