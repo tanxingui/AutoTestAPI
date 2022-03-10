@@ -2,6 +2,7 @@ from xlutils.copy import copy
 import xlrd, json
 from configs.config import configData
 from configs.config import excelDir
+from utils.log_util import logger
 
 
 # 把获取的单元格内容转为字典
@@ -66,13 +67,22 @@ def get_excel_data(excelDir, sheetName, caseName, *colName, selectCase=['all']):
     return resList
 
 
-# 向单元格写入结果
+# 写入数据
 def write_value(self, row, col, value):
-    data = xlrd.open_workbook(self.file)  # 打开文件
-    data_copy = copy(data)  # 复制原文件
-    sheet = data_copy.get_sheet(0)  # 取得复制文件的sheet对象
-    sheet.write(row, col, value)  # 在某一单元格写入value
-    data_copy.save(self.file)  # 保存文件
+    '''
+    写入excel数据
+    row,col,value
+    保存的excel只能为xls后缀否则无法打开
+    '''
+    sheet_id = self.sheet_id
+    if self.sheet_id is None:
+        sheet_id = 0
+    read_data = xlrd.open_workbook(self.excel_name)
+    write_data = copy(read_data)
+    sheet_data = write_data.get_sheet(sheet_id)
+    sheet_data.write(row, col, value)
+    write_data.save(self.excel_name)
+    logger()
 
 
 if __name__ == '__main__':
