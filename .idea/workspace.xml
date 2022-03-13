@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="新增正则表达式封装">
+    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="修改基类，增加了增删改查">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commcon/baseApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/commcon/baseApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commcon/baseLei.py" beforeDir="false" afterPath="$PROJECT_DIR$/commcon/baseLei.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Login.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/Login.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/apiConfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/apiConfig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/0e996bb6-020c-4522-a1fa-f8b5d8b4f831-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2b7986b3-d15a-413e-8b0a-0382d6a42143-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2cc20330-8f4b-4678-8d18-ec6e412ab1de-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2ce0497e-cfb5-48ae-a24e-94a7592c3707-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/308e9e02-bc18-43e5-ac74-7f6d419e3746-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/3c042f33-6c64-499e-981f-b4c241d9425f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/407a783c-ba84-40a8-941a-6cae567d559d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/693ddbad-7f26-4273-ad0f-5918f90e3321-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/87af0259-d175-43ee-b565-35c09b573e07-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/9afad3d6-7bf6-47e6-92bd-3d8cd802ce6a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/a45622f7-2ab4-45c9-a825-909517f8dd62-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/ad5e005e-2971-4b4e-b70a-fd8e393e61d7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/b0e7340e-7d86-44fa-887c-8e17822b606c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/c339a954-af7c-4f98-b3df-f2732b9627bb-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/c5c13674-9d33-4802-8429-77f76b5a9d8a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/e0d63763-58d7-44aa-ad78-c9792a409a0a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/e2f0866d-0550-4bdd-b2a2-0de7abb9ab0d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/ea6bd77d-1221-4567-9473-b3f2ed39cebb-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/f107f865-cdf5-4de5-b64b-dc3f657eee30-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/fb21ce7b-4988-47d6-b04b-5ca3c216823b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/feeb78d0-ffb4-4468-9b8e-2daa78ca1fd6-container.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="baseLei" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Test3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/commcon" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/conftest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commcon/baseLei.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,9 +182,9 @@
       <list>
         <item itemvalue="Python.test_order" />
         <item itemvalue="Python.Login" />
+        <item itemvalue="Python.baseLei" />
         <item itemvalue="Python.mysql_util" />
         <item itemvalue="Python.data_util" />
-        <item itemvalue="Python.conftest" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646882816946</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改基类，增加了增删改查">
+      <created>1646976910462</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646976910462</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -280,6 +266,7 @@
     <MESSAGE value="删除部分注释" />
     <MESSAGE value="新增excel写入数据" />
     <MESSAGE value="新增正则表达式封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增正则表达式封装" />
+    <MESSAGE value="修改基类，增加了增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改基类，增加了增删改查" />
   </component>
 </project>

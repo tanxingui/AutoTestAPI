@@ -1,6 +1,5 @@
 from commcon.baseApi import BaseApi
 
-
 class Add_b(BaseApi):
     def add_b(self):
         resp = self.request_send()

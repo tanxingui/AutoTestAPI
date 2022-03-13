@@ -29,7 +29,6 @@ class Test_Corder(BaseAssert):
         res = Add_c(inBody).add_c()
         self.define_api_assert(res['errcode'],'=',exData['errcode'])
 
-# 啊啊啊
 if __name__ == '__main__':
     time.sleep(1)
     pytest.main(['test_order.py', '-vs', '--alluredir', f'{report_path}','--clean-alluredir'])
