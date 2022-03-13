@@ -9,32 +9,26 @@ from utils.yaml_util import read_yaml
 from libs.Login import Login
 
 token, sid = Login.login(NAME_PWD)
+
+
 class BaseApi:
-    def __init__(self, data):
-        self.data = data
+    def request_send(self, data, id_url='', file=False):
         # 通过类名作为键去获取对应类的数据
         # ---获取继承 BaseAPI的子类的类名---  self.__class__.__name__
         self.record = read_yaml("../data/apiConfig.yaml")[self.__class__.__name__]
-
-    def get_md5(self):
+        self.data = data
         data = str(self.data)  # 把传入的data转换成字符串，然后进行拼接加密
         sign = hashlib.md5((token + data).encode("utf-8")).hexdigest()  # md5加密后返回
-        return sign
-
-    def get_data(self):
-        data = {'sid': sid, 'sign': self.get_md5(), 'data': self.data}  # 拼接新的data
-        return data
-
-    def request_send(self, id_url='', file=False):
+        data = {'sid': sid, 'sign': sign, 'data': self.data}  # 拼接新的data
         try:
             funcName = inspect.stack()[1][3]  # 获取调用当前函数的那个函数名
             print('\n调用request_send:的函数名是>>> ', funcName)
             record = self.record[funcName]  # 获取apiConfig.yaml里面的函数级别键名
             if file:  # 是文件上传接口
-                resp = requests.request(record['method'], url=f'{HOST}' + record['url'], files=self.get_data())  # 发送请求
+                resp = requests.request(record['method'], url=f'{HOST}' + record['url'], files=data)  # 发送请求
             else:
                 resp = requests.request(record['method'], url=f'{HOST}' + record['url'] + str(id_url),
-                                        params=self.get_data())  # 发送请求
+                                        params=data)  # 发送请求
             # 计算接口耗时单位是s
             # print(resp.elapsed.total_seconds())
             # 修改响应数据编码
@@ -46,7 +40,6 @@ class BaseApi:
             # 写日志！---调用日志的方法
             log.error(traceback.format_exc())
             raise error  # 抛出异常
-
 
     # 基类查询
     def query(self, inData):
@@ -65,7 +58,16 @@ class BaseApi:
         id_url = inData['id']
         return self.request_send(inData, id_url)
 
-# ----------------------正则的封装----------------------
+    # 文件上传接口
+    def file_upload(self, fileDir: ''):
+        # 路径/图片名.类型-------  data/123.png
+        fileName = fileDir.split('\\')[-1]  # 文件名
+        fileType = fileName.split('.')[-1]  # 文件类型
+        userFile = {'file': (fileName, open(fileDir, 'rb'), fileType)}  # 请求体
+        print('文件路径>>>', fileDir)
+        return self.request_send(userFile, file=True)
+
+    # ----------------------正则的封装----------------------
     @classmethod
     def replace(cls, string, pattern='#(.*?)#'):
         for result in re.finditer(pattern, string):

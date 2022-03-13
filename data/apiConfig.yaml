@@ -3,12 +3,12 @@ Login:
     url: '/login'
     method: 'post'
 
-Add_b:
-  add_b:
+Test_Border:
+  test_borDer:
     url: '/user_order/set'
     method: 'post'
 
-Add_c:
-  add_c:
+Test_Corder:
+  test_corDer:
     url: '/order_manage/list'
     method: 'post'

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="修改基类，增加了增删改查">
+    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="随便改改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commcon/baseApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/commcon/baseApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Login.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/Login.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commcon/baseLei.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/baseLei.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/apiConfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/apiConfig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_order.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
       <recent name="D:\study\Test4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AutoTextAPI\libs" />
       <recent name="D:\AutoTextAPI\utils" />
       <recent name="D:\study\Test3\utils" />
       <recent name="D:\study\Test3\commcon" />
@@ -85,7 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commcon/baseLei.py" />
+      <option name="SCRIPT_NAME" value="D:\AutoTextAPI\libs\baseLei.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646976910462</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="随便改改">
+      <created>1647172350016</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647172350016</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -267,6 +275,7 @@
     <MESSAGE value="新增excel写入数据" />
     <MESSAGE value="新增正则表达式封装" />
     <MESSAGE value="修改基类，增加了增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改基类，增加了增删改查" />
+    <MESSAGE value="随便改改" />
+    <option name="LAST_COMMIT_MESSAGE" value="随便改改" />
   </component>
 </project>
