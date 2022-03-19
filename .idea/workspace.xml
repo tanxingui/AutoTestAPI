@@ -4,7 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="重写框架，修改运行逻辑" />
+    <list default="true" id="1b95ff60-9c18-4b73-862f-85524bef1429" name="变更" comment="重写框架，修改运行逻辑">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commcon/baseApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/commcon/baseApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Login.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/apiConfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/apiConfig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220116 17-04-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220117 11-48-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220117 11-48-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220117 13-46-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220118 09-53-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220120 15-20-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220120 15-23-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220120 15-26-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220126 14-18-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220126 14-34-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220128 09-42-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220128 09-43-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220128 21-30-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220201 11-45-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220201 11-49-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220201 11-51-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220201 12-18-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220214 12-42-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-36-52.log" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/test_Border.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-41-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-43-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-48-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-49-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 09-51-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 11-21-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 11-22-40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 15-13-00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220225 15-15-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220302 18-01-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220308 16-21-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20220308 16-22-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/mysql_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/mysql_util.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +63,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/test_cases/test_order.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="21Zl2KJhE7ve0I5KugBecFqESWr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +74,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../study/Delivery_System_完整" />
     <property name="settings.editor.selected.configurable" value="com.gitee.ui.GiteeSettingsConfigurable" />
   </component>
@@ -52,7 +93,7 @@
       <recent name="D:\study\Test3\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_order">
+  <component name="RunManager" selected="Python.test_Border">
     <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Test3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,48 +107,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/libs/Login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="baseLei" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Test3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/commcon" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\AutoTextAPI\libs\baseLei.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="data_util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Test3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/data_util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,6 +157,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_Border" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Test3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_cases/test_Border.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_order" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Test3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,13 +199,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="yaml_util" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Test3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/yaml_util.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_order" />
-        <item itemvalue="Python.Login" />
-        <item itemvalue="Python.baseLei" />
+        <item itemvalue="Python.test_Border" />
         <item itemvalue="Python.mysql_util" />
-        <item itemvalue="Python.data_util" />
+        <item itemvalue="Python.Login" />
+        <item itemvalue="Python.test_order" />
+        <item itemvalue="Python.yaml_util" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647182604130</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="重写框架，修改运行逻辑">
+      <created>1647183160897</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647183160897</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

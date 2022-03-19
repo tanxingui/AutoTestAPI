@@ -1,9 +1,9 @@
 import requests
 from configs.config import NAME_PWD
 
+
 class Login:
-    @classmethod
-    def login(cls, data):
+    def login(self, data):
         url = 'http://api.s.youcheyihou.com/testapi/iyourcar_autobuy/backend/login'
         res = requests.post(url=url, data=data)
         sid = res.json()["result"]["sid"]

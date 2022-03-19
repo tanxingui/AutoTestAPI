@@ -1,6 +1,5 @@
 import pytest
 
-
 # 钩子函数，解决中文用例名称显示乱码
 def pytest_collection_modifyitems(items):
     """
@@ -14,7 +13,7 @@ def pytest_collection_modifyitems(items):
         item._nodeid = item.nodeid.encode("utf-8").decode("unicode_escape")
 
 
-@pytest.fixture(scope='session',autouse=True)
+@pytest.fixture(scope='session', autouse=True)
 def start_runing():
     print('开始接口自动化-------读取Excel')
     yield

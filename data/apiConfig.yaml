@@ -1,14 +1,13 @@
-Login:
-  login:
-    url: '/login'
-    method: 'post'
-
-Test_Border:
-  test_borDer:
+Test_add_Border:
+  test_add_border:
     url: '/user_order/set'
     method: 'post'
-
-Test_Corder:
-  test_corDer:
-    url: '/order_manage/list'
+  test_list_border:
+    url: '/user_order/list'
+    method: 'post'
+  test_shangchuan_border:
+    url: '/apollo/user_order/transfer_vouchers'
+    method: 'post'
+  test_shenhe_border:
+    url: '/user_assets/transfer_audit/audit'
     method: 'post'

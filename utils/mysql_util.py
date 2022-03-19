@@ -71,6 +71,9 @@ class DBConnection:
 
 
 if __name__ == '__main__':
-    res1 = DBConnection().select(
-        "SELECT CASE financial_institution WHEN 2 THEN'厂家金融' else '非产家金融' END FROM dealer_shop_deposit_deliver_info WHERE parent_order_no = '202111251527171331';")  # 查询订单金融状态
-    print(res1)
+    # aaa= '202111251527171331'
+    # res1 = DBConnection().select(
+    #     "SELECT CASE financial_institution WHEN 2 THEN'厂家金融' else '非产家金融' END FROM dealer_shop_deposit_deliver_info WHERE parent_order_no = %s" %aaa)  # 查询订单金融状态
+    order_id = DBConnection().select(
+        "SELECT id from dealer_shop_user_order WHERE order_no = 202203191811458493")
+    print(order_id)

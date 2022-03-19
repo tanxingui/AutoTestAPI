@@ -1,5 +1,0 @@
-2022-01-17 11:48:43,386 - ERROR - baseApi.py[59]:Traceback (most recent call last):
-  File "D:\study\Test3\commcon\baseApi.py", line 52, in define_api_assert
-    assert result == exp_result
-AssertionError
-

@@ -1,25 +1,28 @@
 import hashlib
 import inspect
 import traceback
+
+import jsonpath
 import requests
 import re
 from configs.config import HOST, NAME_PWD
+from utils.decorator import show_time
 from utils.log_util import log
 from utils.yaml_util import read_yaml
 from libs.Login import Login
 
-token, sid = Login.login(NAME_PWD)
+token, sid = Login().login(NAME_PWD)
 
 
 class BaseApi:
-    def request_send(self, data, id_url='', file=False):
+    def request_send(self, data, file=False):
         # 通过类名作为键去获取对应类的数据
         # ---获取继承 BaseAPI的子类的类名---  self.__class__.__name__
         self.record = read_yaml("../data/apiConfig.yaml")[self.__class__.__name__]
-        self.data = data
-        data = str(self.data)  # 把传入的data转换成字符串，然后进行拼接加密
-        sign = hashlib.md5((token + data).encode("utf-8")).hexdigest()  # md5加密后返回
-        data = {'sid': sid, 'sign': sign, 'data': self.data}  # 拼接新的data
+        # self.data = data
+        # data = str(self.data)  # 把传入的data转换成字符串，然后进行拼接加密
+        sign = hashlib.md5((token + data).encode("utf-8")).hexdigest()  # md5加密
+        data = {'sid': sid, 'sign': sign, 'data': data}  # 拼接新的data
         try:
             funcName = inspect.stack()[1][3]  # 获取调用当前函数的那个函数名
             print('\n调用request_send:的函数名是>>> ', funcName)
@@ -27,8 +30,7 @@ class BaseApi:
             if file:  # 是文件上传接口
                 resp = requests.request(record['method'], url=f'{HOST}' + record['url'], files=data)  # 发送请求
             else:
-                resp = requests.request(record['method'], url=f'{HOST}' + record['url'] + str(id_url),
-                                        params=data)  # 发送请求
+                resp = requests.request(record['method'], url=f'{HOST}' + record['url'], data=data)  # 发送请求
             # 计算接口耗时单位是s
             # print(resp.elapsed.total_seconds())
             # 修改响应数据编码
@@ -41,24 +43,8 @@ class BaseApi:
             log.error(traceback.format_exc())
             raise error  # 抛出异常
 
-    # 基类查询
-    def query(self, inData):
-        return self.request_send(inData)
-
-    # 基类增加
-    def add(self, inData):
-        return self.request_send(inData)
-
-    # 基类修改
-    def update(self, inData):
-        return self.request_send(inData)
-
-    # 基类删除
-    def delete(self, inData):
-        id_url = inData['id']
-        return self.request_send(inData, id_url)
-
     # 文件上传接口
+    @show_time
     def file_upload(self, fileDir: ''):
         # 路径/图片名.类型-------  data/123.png
         fileName = fileDir.split('\\')[-1]  # 文件名
@@ -69,25 +55,28 @@ class BaseApi:
 
     # ----------------------正则的封装----------------------
     @classmethod
-    def replace(cls, string, pattern='#(.*?)#'):
-        for result in re.finditer(pattern, string):
-            print(result.group())
-            print(result.group(1))
+    def replace(cls, data, pattern='#(.*?)#'):
+        for result in re.finditer(pattern, data):
+            # 分段提取截取出来的字符串
+            print(result.group())  # 匹配所有
+            print(result.group(1))  # 匹配第一段
             #   需要替换的数据
             old_value = result.group()
             #   要替换的属性
             prop_name = result.group(1)
             new_value = str(getattr(cls, prop_name))
-            string = string.replace(old_value, new_value)
-        return string
+            data = data.replace(old_value, new_value)
+        return data
 
 
 # ----------------------断言类的封装----------------------
 class BaseAssert:
     @classmethod  # 类方法
     def define_api_assert(cls, result, condition, exp_result):
-        print(result)
-        print(exp_result)
+        result = jsonpath.jsonpath(result, '$.errcode')
+        exp_result = jsonpath.jsonpath(exp_result, '$.errcode')
+        print('实际响应的结果>>', result)
+        print('预期响应的结果>>', exp_result)
         try:
             if condition == '=':
                 assert result == exp_result
