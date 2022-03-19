@@ -83,7 +83,7 @@ class BaseAssert:
             elif condition == 'in':
                 assert exp_result in result
             else:
-                print('条件不满足')
+                print('断言失败，条件不满足')
         except Exception as error:
             # 日志获取详细的异常信息,format_exc()返回字符串
             log.error(traceback.format_exc())

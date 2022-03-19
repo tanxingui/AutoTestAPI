@@ -26,7 +26,9 @@ class Test_add_Border(BaseApi, BaseAssert):
     @allure.title("{caseTitle}")
     def test_list_border(self, caseTitle, inData, respData):
         res = self.request_send(str(inData))
+        # 获取order_no
         order_no = jsonpath.jsonpath(res, '$..order_no')[1]
+        # 添加到列表，给下一个接口的sql语句使用
         order_no_list.append(order_no)
         self.define_api_assert(res, '=', respData)
 
