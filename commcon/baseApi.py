@@ -53,7 +53,7 @@ class BaseApi:
         print('文件路径>>>', fileDir)
         return self.request_send(userFile, file=True)
 
-    # ----------------------正则的封装----------------------
+    # ----------------------正则的封装-----------------------
     @classmethod
     def replace(cls, data, pattern='#(.*?)#'):
         for result in re.finditer(pattern, data):
